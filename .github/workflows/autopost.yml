@@ -1,0 +1,28 @@
+name: siapnikah autopost
+on:
+  schedule:
+    - cron: "30 4 * * *"   # 11:30 WIB
+    - cron: "30 12 * * *"  # 19:30 WIB
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish next due item
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          IG_USER_ID: ${{ vars.IG_USER_ID }}
+          FB_PAGE_ID: ${{ vars.FB_PAGE_ID }}
+          THREADS_USER_ID: ${{ vars.THREADS_USER_ID }}
+        run: python3 scripts/autopost.py
+      - name: Save queue state
+        if: always()
+        run: |
+          git config user.name "siapnikah-bot"
+          git config user.email "bot@siapnikah.id"
+          git add -A queue posted
+          git diff --cached --quiet || (git commit -m "autopost: $(date -u +%FT%TZ)" && git push)
