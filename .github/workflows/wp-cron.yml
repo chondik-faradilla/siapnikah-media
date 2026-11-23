@@ -1,21 +1,33 @@
 name: siapnikah wp-cron ping
-# Memicu WP-Cron siapnikah.id tiap ±15 menit agar artikel otomatis
-# tetap terbit walau situs belum ada pengunjung.
+# Memicu WP-Cron siapnikah.id agar artikel otomatis tetap terbit
+# walau situs belum ada pengunjung.
+# - schedule: satu ping tiap ±15 menit (kalau jadwal GitHub berjalan).
+# - workflow_dispatch (dipicu cadangan harian): ping tiap 15 menit selama
+#   ±5,5 jam dalam satu run, untuk berjaga kalau jadwal GitHub macet.
 on:
   schedule:
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch: {}
+concurrency:
+  group: wp-cron-${{ github.event_name }}
+  cancel-in-progress: false
 permissions:
   contents: read
 jobs:
   ping:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 345
     steps:
       - name: Trigger wp-cron.php
         run: |
-          code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 120 \
-            -A "siapnikah-cron-bot" \
-            "https://siapnikah.id/wp-cron.php?doing_wp_cron=$(date +%s)")
-          echo "HTTP $code"
-          test "$code" -lt 500
+          ping() {
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 120 \
+              -A "siapnikah-cron-bot" \
+              "https://siapnikah.id/wp-cron.php?doing_wp_cron=$(date +%s)")
+            echo "$(date -u +%FT%TZ) HTTP $code"
+          }
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            for i in $(seq 1 22); do ping; [ "$i" -lt 22 ] && sleep 900; done
+          else
+            ping
+          fi
