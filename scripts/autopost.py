@@ -40,8 +40,15 @@ def ig_reel(item):
     return call(f"{G}/{ig}/media_publish", {"creation_id": cid, "access_token": tok})["id"]
 
 
+def page_token():
+    """System-user token -> Page access token (needed for Page publishing)."""
+    page = ENV["FB_PAGE_ID"]
+    r = call(f"{G}/{page}?fields=access_token&access_token={ENV['META_PAGE_TOKEN']}")
+    return r.get("access_token") or ENV["META_PAGE_TOKEN"]
+
+
 def fb_reel(item):
-    tok, page = ENV["META_PAGE_TOKEN"], ENV["FB_PAGE_ID"]
+    tok, page = page_token(), ENV["FB_PAGE_ID"]
     vid = call(f"{G}/{page}/video_reels", {"upload_phase": "start", "access_token": tok})["video_id"]
     req = urllib.request.Request(f"https://rupload.facebook.com/video-upload/v21.0/{vid}", method="POST",
                                  headers={"Authorization": f"OAuth {tok}", "file_url": item["video_url"]})

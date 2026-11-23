@@ -15,8 +15,8 @@ jobs:
         env:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
-          IG_USER_ID: ${{ vars.IG_USER_ID }}
-          FB_PAGE_ID: ${{ vars.FB_PAGE_ID }}
+          IG_USER_ID: "17841447591100785"
+          FB_PAGE_ID: "1420973204436596"
           THREADS_USER_ID: ${{ vars.THREADS_USER_ID }}
         run: python3 scripts/autopost.py
       - name: Save queue state
