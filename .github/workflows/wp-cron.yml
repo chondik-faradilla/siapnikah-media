@@ -2,8 +2,10 @@ name: siapnikah wp-cron ping
 # Memicu WP-Cron siapnikah.id agar artikel otomatis tetap terbit
 # walau situs belum ada pengunjung.
 # - schedule: satu ping tiap ±15 menit (kalau jadwal GitHub berjalan).
-# - workflow_dispatch (dipicu cadangan harian): ping tiap 15 menit selama
-#   ±5,5 jam dalam satu run, untuk berjaga kalau jadwal GitHub macet.
+# - workflow_dispatch (dipicu tugas harian 16:47 WIB): selama ±5,5 jam,
+#   tiap 15 menit: ping wp-cron + cek queue/; kalau ada item jatuh tempo dan
+#   autopost tidak sedang berjalan, picu autopost.yml. Ini cadangan bila
+#   jadwal GitHub macet.
 on:
   schedule:
     - cron: "7,22,37,52 * * * *"
@@ -13,21 +15,46 @@ concurrency:
   cancel-in-progress: false
 permissions:
   contents: read
+  actions: write
 jobs:
   ping:
     runs-on: ubuntu-latest
     timeout-minutes: 345
     steps:
-      - name: Trigger wp-cron.php
+      - uses: actions/checkout@v4
+        if: github.event_name == 'workflow_dispatch'
+      - name: Ping (dan cadangan autopost)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
         run: |
           ping() {
             code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 120 \
               -A "siapnikah-cron-bot" \
               "https://siapnikah.id/wp-cron.php?doing_wp_cron=$(date +%s)")
-            echo "$(date -u +%FT%TZ) HTTP $code"
+            echo "$(date -u +%FT%TZ) wp-cron HTTP $code"
+          }
+          autopost_if_due() {
+            git pull -q --ff-only || true
+            due=$(python3 -c "
+          import glob,json,datetime
+          now=datetime.datetime.now(datetime.timezone.utc)
+          print(sum(1 for f in glob.glob('queue/*.json') if datetime.datetime.fromisoformat(json.load(open(f))['publish_after'])<=now))")
+            if [ "$due" -gt 0 ]; then
+              busy=$(gh api "repos/$REPO/actions/workflows/autopost.yml/runs?per_page=5" \
+                --jq '[.workflow_runs[]|select(.status!="completed")]|length')
+              if [ "$busy" = "0" ]; then
+                gh api -X POST "repos/$REPO/actions/workflows/autopost.yml/dispatches" -f ref=main \
+                  && echo "$(date -u +%FT%TZ) autopost dipicu ($due item jatuh tempo)"
+              fi
+            fi
           }
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            for i in $(seq 1 22); do ping; [ "$i" -lt 22 ] && sleep 900; done
+            for i in $(seq 1 22); do
+              ping
+              autopost_if_due
+              [ "$i" -lt 22 ] && sleep 900
+            done
           else
             ping
           fi
