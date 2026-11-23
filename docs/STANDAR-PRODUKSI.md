@@ -3,7 +3,7 @@
 Ditetapkan pemilik (Chondik), 24 Nov 2026. WAJIB dibaca dan dipatuhi setiap run produksi.
 
 ## Goal
-- **2 posting video per hari, tiap hari:** slot -a tayang 11:30 WIB, slot -b tayang 19:30 WIB, di IG Reels + FB Reels (Halaman Siapnikah.id). Threads menyusul setelah THREADS_TOKEN diisi.
+- **2 posting video per hari, tiap hari:** slot -a tayang 11:30 WIB, slot -b tayang 19:30 WIB, di IG Reels + FB Reels (Halaman Siapnikah.id) + **YouTube Shorts @kata2positif** (dijadwalkan lewat YouTube Studio di Chrome, lihat `docs/YOUTUBE-UPLOAD.md`). Threads menyusul setelah THREADS_TOKEN diisi.
 - Tujuan bisnis: mendatangkan orang yang serius menikah ke siapnikah.id (CTA "Cek kesiapanmu, gratis — siapnikah.id").
 - Tanpa menunggu instruksi pemilik: selama laptop menyala, produksi, QA, dan perbaikan dikerjakan sendiri. Pemilik cukup menerima laporan.
 
