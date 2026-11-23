@@ -2,14 +2,21 @@ name: siapnikah wp-cron ping
 # Memicu WP-Cron siapnikah.id agar artikel otomatis tetap terbit
 # walau situs belum ada pengunjung.
 # - schedule: satu ping tiap ±15 menit (kalau jadwal GitHub berjalan).
-# - workflow_dispatch (dipicu tugas harian 16:47 WIB): selama ±5,5 jam, Didaftarkan ulang oleh pemilik.
+# - workflow_dispatch (dipicu tugas harian 16:47 WIB, lalu menyambung dirinya
+#   3x sehingga berjaga ±21 jam sampai lewat slot 11:30 besoknya): tiap run ±5,5 jam, Didaftarkan ulang oleh pemilik.
 #   tiap 15 menit: ping wp-cron + cek queue/; kalau ada item jatuh tempo dan
 #   autopost tidak sedang berjalan, picu autopost.yml. Ini cadangan bila
 #   jadwal GitHub macet.
 on:
   schedule:
     - cron: "7,22,37,52 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      sisa:
+        description: "Berapa kali lagi run ini menyambung dirinya (tiap run ±5,5 jam)"
+        required: false
+        default: "3"
+
 concurrency:
   group: wp-cron-${{ github.event_name }}
   cancel-in-progress: false
@@ -27,6 +34,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
+          SISA: ${{ github.event.inputs.sisa || '0' }}
         run: |
           ping() {
             code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 120 \
@@ -55,6 +63,13 @@ jobs:
               autopost_if_due
               [ "$i" -lt 22 ] && sleep 900
             done
+            # Sambung: 1 run sore (dipicu tugas harian 16:47 WIB) + 3 sambungan
+            # = berjaga ±21 jam, sampai lewat slot 11:30 WIB besoknya.
+            if [ "$SISA" -gt 0 ] 2>/dev/null; then
+              gh api -X POST "repos/$REPO/actions/workflows/wp-cron.yml/dispatches" \
+                -f ref=main -f "inputs[sisa]=$((SISA-1))" \
+                && echo "$(date -u +%FT%TZ) run berikutnya dipicu (sisa $((SISA-1)))"
+            fi
           else
             ping
           fi
