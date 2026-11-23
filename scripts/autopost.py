@@ -75,27 +75,45 @@ def main():
             due.append((f, item))
     if not due:
         print("nothing due"); return 0
-    f, item = due[0]  # one item per run
-    result, failed = {}, False
-    steps = []
-    if ENV.get("META_PAGE_TOKEN") and item.get("video_url"):
-        if ENV.get("IG_USER_ID"): steps.append(("instagram", lambda: ig_reel(item)))
-        if ENV.get("FB_PAGE_ID"): steps.append(("facebook", lambda: fb_reel(item)))
-    if ENV.get("THREADS_TOKEN") and ENV.get("THREADS_USER_ID"):
-        for i, t in enumerate(item.get("threads", [])):
-            steps.append((f"threads_{i}", lambda t=t: threads_post(t)))
-    if not steps:
+    def plan(item):
+        steps = []
+        if ENV.get("META_PAGE_TOKEN") and item.get("video_url"):
+            if ENV.get("IG_USER_ID"): steps.append(("instagram", lambda: ig_reel(item)))
+            if ENV.get("FB_PAGE_ID"): steps.append(("facebook", lambda: fb_reel(item)))
+        if ENV.get("THREADS_TOKEN") and ENV.get("THREADS_USER_ID"):
+            for i, t in enumerate(item.get("threads", [])):
+                steps.append((f"threads_{i}", lambda t=t: threads_post(t)))
+        return steps
+
+    def archive(f, item, result):
+        item["result"] = result
+        item["posted_at"] = now.isoformat()
+        os.makedirs("posted", exist_ok=True)
+        json.dump(item, open(os.path.join("posted", os.path.basename(f)), "w"), ensure_ascii=False, indent=1)
+        os.remove(f)
+
+    # Item yang tidak bisa diposting dengan kredensial yang ada (mis. hanya teks
+    # Threads padahal Threads belum terhubung) dilewati & diarsipkan supaya tidak
+    # menahan antrean. Satu item yang benar-benar diposting per run.
+    if not ENV.get("META_PAGE_TOKEN") and not ENV.get("THREADS_TOKEN"):
         print("no credentials configured yet; leaving queue untouched"); return 0
+    f = item = None
+    for cf, citem in due:
+        if plan(citem):
+            f, item = cf, citem
+            break
+        archive(cf, citem, {"skipped": "tidak ada kanal yang bisa memposting item ini (video_url kosong / kredensial belum diisi)"})
+        print("skipped", cf)
+    if f is None:
+        print("nothing postable"); return 0
+    result, failed = {}, False
+    steps = plan(item)
     for name, fn in steps:
         try:
             result[name] = fn(); print(name, "OK", result[name])
         except Exception as e:
             result[name] = f"ERROR: {e}"; failed = True; print(name, "FAILED", e)
-    item["result"] = result
-    item["posted_at"] = now.isoformat()
-    os.makedirs("posted", exist_ok=True)
-    json.dump(item, open(os.path.join("posted", os.path.basename(f)), "w"), ensure_ascii=False, indent=1)
-    os.remove(f)
+    archive(f, item, result)
     return 1 if failed else 0
 
 

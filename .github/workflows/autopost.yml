@@ -4,6 +4,9 @@ on:
     - cron: "30 4 * * *"   # 11:30 WIB
     - cron: "30 12 * * *"  # 19:30 WIB
   workflow_dispatch: {}
+concurrency:
+  group: autopost
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
