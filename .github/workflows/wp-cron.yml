@@ -2,7 +2,7 @@ name: siapnikah wp-cron ping
 # Memicu WP-Cron siapnikah.id agar artikel otomatis tetap terbit
 # walau situs belum ada pengunjung.
 # - schedule: satu ping tiap ±15 menit (kalau jadwal GitHub berjalan).
-# - workflow_dispatch (dipicu tugas harian 16:47 WIB): selama ±5,5 jam,
+# - workflow_dispatch (dipicu tugas harian 16:47 WIB): selama ±5,5 jam, Didaftarkan ulang oleh pemilik.
 #   tiap 15 menit: ping wp-cron + cek queue/; kalau ada item jatuh tempo dan
 #   autopost tidak sedang berjalan, picu autopost.yml. Ini cadangan bila
 #   jadwal GitHub macet.
