@@ -1,7 +1,7 @@
 name: siapnikah autopost
 on:
   schedule:
-    - cron: "30 4 * * *"   # 11:30 WIB
+    - cron: "30 4 * * *"   # 11:30 WIB (siang)
     - cron: "30 12 * * *"  # 19:30 WIB
   workflow_dispatch: {}
 concurrency:
