@@ -2,5 +2,9 @@
  "publish_after": "2026-11-23T19:30:00+07:00",
  "threads": [
   "Ada yang bilang \"nikah aja dulu, nanti juga siap.\" Ada juga yang bilang \"siapin dulu, baru nikah.\" Kamu tim yang mana, dan kenapa?"
- ]
+ ],
+ "result": {
+  "skipped": "tidak ada kanal yang bisa memposting item ini (video_url kosong / kredensial belum diisi)"
+ },
+ "posted_at": "2026-11-23T14:03:03.704570+00:00"
 }
