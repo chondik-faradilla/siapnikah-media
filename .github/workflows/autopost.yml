@@ -1,8 +1,8 @@
 name: siapnikah autopost
 on:
   schedule:
-    - cron: "30 4 * * *"   # 11:30 WIB (siang)
-    - cron: "30 12 * * *"  # 19:30 WIB
+    - cron: "37 4 * * *"   # 11:37 WIB (menit sepi; jadwal GitHub sering telat di :00/:30)
+    - cron: "37 12 * * *"  # 19:37 WIB
   workflow_dispatch: {}
 concurrency:
   group: autopost
