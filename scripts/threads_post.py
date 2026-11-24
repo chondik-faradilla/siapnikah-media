@@ -9,7 +9,7 @@ Satu item per run (agar jarak antarposting terjaga); item yang tertinggal
 diposting pada run berikutnya. Kalau THREADS_TOKEN / THREADS_USER_ID belum
 diisi, antrean dibiarkan utuh (tidak ada yang dibuang).
 
-Secrets: THREADS_TOKEN (long-lived user token Threads). Variable: THREADS_USER_ID.
+Secret: THREADS_TOKEN (long-lived user token Threads). THREADS_USER_ID opsional (diambil otomatis dari /me).
 """
 import datetime, glob, json, os, sys, time, urllib.error, urllib.parse, urllib.request
 
@@ -36,6 +36,11 @@ def main():
             due.append((f, item))
     if not due:
         print("nothing due"); return 0
+    if tok and not uid:
+        try:
+            uid = call(f"{T}/me?fields=id,username&access_token={tok}")["id"]
+        except Exception as e:
+            print("gagal ambil id akun Threads:", e); return 1
     if not (tok and uid):
         print(f"{len(due)} item jatuh tempo, tapi THREADS_TOKEN/THREADS_USER_ID belum diisi; antrean dibiarkan")
         return 0
