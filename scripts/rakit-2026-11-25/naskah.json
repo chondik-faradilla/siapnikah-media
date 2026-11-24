@@ -1,0 +1,167 @@
+{
+ "a": {
+  "judul": "3 obrolan wajib sebelum akad",
+  "blocks": [
+   {
+    "t": "s",
+    "vo": "Sebelum akad, ada tiga obrolan yang sering terlewat. Padahal penting banget.",
+    "label": "SEBELUM AKAD",
+    "lc": "o",
+    "head": "3 obrolan yang *sering terlewat.*",
+    "sub": "Padahal penting banget.",
+    "pose": "hijab-02",
+    "dur": 4.0
+   },
+   {
+    "t": "b",
+    "vo": "Banyak pasangan baru sadar beda prinsip, setelah tinggal serumah.",
+    "id": 154140,
+    "txt": "Baru sadar beda prinsip\nsetelah serumah?",
+    "dur": 3.6
+   },
+   {
+    "t": "s",
+    "vo": "Pertama, visi. Mau dibawa ke mana rumah tangga kalian, lima sampai sepuluh tahun lagi?",
+    "label": "01 · VISI",
+    "lc": "g",
+    "head": "Mau dibawa *ke mana* rumah tangga kalian?",
+    "sub": "Bayangkan 5–10 tahun lagi: tinggal di mana, kerja apa, mimpi bersama apa.",
+    "pose": "pria-04",
+    "dur": 5.0
+   },
+   {
+    "t": "s",
+    "vo": "Kedua, keuangan. Penghasilan, utang, dan siapa yang mengatur pengeluaran.",
+    "label": "02 · KEUANGAN",
+    "lc": "g",
+    "head": "Terbuka soal *uang,* sejak awal.",
+    "sub": "Penghasilan, utang, dan siapa yang mengatur pengeluaran.",
+    "pose": "kacamata-11",
+    "dur": 4.6
+   },
+   {
+    "t": "s",
+    "vo": "Ketiga, peran. Siapa mengerjakan apa di rumah, dan bagaimana kalau nanti punya anak.",
+    "label": "03 · PERAN",
+    "lc": "g",
+    "head": "Siapa mengerjakan *apa* di rumah?",
+    "sub": "Termasuk: bagaimana pembagiannya kalau nanti punya anak.",
+    "pose": "pria-05",
+    "dur": 4.6
+   },
+   {
+    "t": "s",
+    "vo": "Obrolan ini bukan untuk mencari salah, tapi supaya kalian saling mengenal dengan jujur.",
+    "label": "INGAT",
+    "lc": "m",
+    "head": "Bukan untuk *mencari salah.*",
+    "sub": "Tapi supaya kalian saling mengenal dengan jujur.",
+    "pose": "hijab-11",
+    "dur": 4.4
+   },
+   {
+    "t": "b",
+    "vo": "Bicarakan saat taaruf, dengan pendamping, tetap terjaga.",
+    "id": 341297,
+    "txt": "Bicarakan saat taaruf,\ntetap terjaga.",
+    "dur": 3.6
+   },
+   {
+    "t": "c",
+    "vo": "Cek kesiapanmu, gratis, di siapnikah titik id.",
+    "label": "GRATIS",
+    "lc": "o",
+    "head": "Sudah *siap* untuk obrolan ini?",
+    "sub": "Cek kesiapanmu dulu, gratis.",
+    "pose": "hijab-12",
+    "dur": 4.6
+   }
+  ]
+ },
+ "b": {
+  "judul": "Menikah juga dengan keluarganya",
+  "blocks": [
+   {
+    "t": "s",
+    "vo": "Menikah itu bukan cuma dengan dia. Tapi juga dengan keluarganya.",
+    "label": "PERLU DISADARI",
+    "lc": "o",
+    "head": "Menikah bukan cuma dengan *dia.*",
+    "sub": "Tapi juga dengan keluarganya.",
+    "pose": "hijab-03",
+    "dur": 4.0
+   },
+   {
+    "t": "b",
+    "vo": "Setelah akad, kamu punya orang tua baru, saudara baru, dan kebiasaan baru.",
+    "id": 265592,
+    "txt": "Orang tua baru,\nkebiasaan baru.",
+    "dur": 3.8
+   },
+   {
+    "t": "s",
+    "vo": "Di sinilah banyak gesekan kecil bermula, kalau tidak disiapkan.",
+    "label": "REALITANYA",
+    "lc": "g",
+    "head": "Gesekan kecil sering *bermula* di sini.",
+    "sub": "Kalau tidak disiapkan sejak awal.",
+    "pose": "pria-05",
+    "dur": 4.2
+   },
+   {
+    "t": "s",
+    "vo": "Pertama, kenali keluarganya. Cara mereka berbicara, dan apa yang mereka harapkan.",
+    "label": "01 · KENALI",
+    "lc": "g",
+    "head": "Kenali *keluarganya* lebih dulu.",
+    "sub": "Cara mereka berbicara, dan apa yang mereka harapkan.",
+    "pose": "kacamata-06",
+    "dur": 4.6
+   },
+   {
+    "t": "s",
+    "vo": "Kedua, sepakati batasan berdua. Misalnya soal tempat tinggal dan keputusan keuangan.",
+    "label": "02 · SEPAKATI",
+    "lc": "g",
+    "head": "Sepakati batasan *berdua.*",
+    "sub": "Misalnya soal tempat tinggal dan keputusan keuangan.",
+    "pose": "hijab-05",
+    "dur": 4.6
+   },
+   {
+    "t": "b",
+    "vo": "Ketiga, tetap hormati orang tua. Tanpa membiarkan rumah tangga kalian diatur pihak lain.",
+    "id": 237643,
+    "txt": "Hormati orang tua,\njaga keputusan berdua.",
+    "dur": 4.4
+   },
+   {
+    "t": "s",
+    "vo": "Kalau kalian kompak, keluarga besar bisa jadi tempat pulang yang hangat.",
+    "label": "KUNCINYA",
+    "lc": "m",
+    "head": "Kalau kalian *kompak,*",
+    "sub": "keluarga besar bisa jadi tempat pulang yang hangat.",
+    "pose": "pria-09",
+    "dur": 4.2
+   },
+   {
+    "t": "b",
+    "vo": "Kompak berdua, hangat bersama keluarga.",
+    "id": 363828,
+    "txt": "Kompak berdua,\nhangat bersama keluarga.",
+    "dur": 3.2
+   },
+   {
+    "t": "c",
+    "vo": "Cek kesiapanmu, gratis, di siapnikah titik id.",
+    "label": "GRATIS",
+    "lc": "o",
+    "head": "Sudah *siap* jadi bagian keluarga baru?",
+    "sub": "Cek kesiapanmu dulu, gratis.",
+    "pose": "pria-11",
+    "dur": 4.6
+   }
+  ]
+ }
+}

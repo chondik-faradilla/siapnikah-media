@@ -1,0 +1,10 @@
+{
+ "publish_after": "2026-11-25T19:30:00+07:00",
+ "video_url": "https://cdn.jsdelivr.net/gh/chondik-faradilla/siapnikah-media@main/reels/2026-11-25-b.mp4",
+ "cover_url": "https://cdn.jsdelivr.net/gh/chondik-faradilla/siapnikah-media@main/reels/2026-11-25-b.jpg",
+ "topik": "peran keluarga: menikah juga dengan keluarganya",
+ "caption": "Menikah itu bukan cuma dengan dia. Tapi juga dengan keluarganya 🤍\n\nSetelah akad, kamu punya orang tua baru, saudara baru, dan kebiasaan baru. Di sinilah banyak gesekan kecil bermula, kalau tidak disiapkan.\n\n3 hal yang perlu disiapkan:\n1️⃣ Kenali keluarganya: cara mereka berbicara dan apa yang mereka harapkan.\n2️⃣ Sepakati batasan berdua: misalnya soal tempat tinggal dan keputusan keuangan.\n3️⃣ Tetap hormati orang tua, tanpa membiarkan rumah tangga kalian diatur pihak lain.\n\nKalau kalian kompak, keluarga besar bisa jadi tempat pulang yang hangat 🌱\n\nMenurutmu, apa yang paling perlu disepakati soal keluarga besar sebelum menikah? Cerita di komentar 👇\nCek kesiapanmu gratis di siapnikah.id (link di bio)\n\n#siapnikah #persiapanmenikah #keluargabesar #mertua #calonpengantin #pranikah #taaruf #rumahtangga #muslimindonesia",
+ "perlu_vo": true,
+ "perlu_youtube": true,
+ "catatan": "Dibuat tanpa VO: Chrome pengguna tidak bisa dipakai (3 browser tersambung, belum dipilih untuk sesi terjadwal). Run berikutnya: rakit ulang dengan VO via scripts/rakit-2026-11-25/build.py <key> reels/2026-11-25-<key>2.mp4 <vo.wav>, ganti video_url, jadwalkan YouTube."
+}
