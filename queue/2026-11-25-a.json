@@ -1,10 +1,13 @@
 {
  "publish_after": "2026-11-25T11:30:00+07:00",
- "video_url": "https://cdn.jsdelivr.net/gh/chondik-faradilla/siapnikah-media@main/reels/2026-11-25-a.mp4",
- "cover_url": "https://cdn.jsdelivr.net/gh/chondik-faradilla/siapnikah-media@main/reels/2026-11-25-a2.jpg",
- "topik": "komunikasi: 3 obrolan wajib sebelum akad (visi, keuangan, peran)",
- "caption": "Sebelum akad, ada 3 obrolan yang sering terlewat 🤍\n\nBanyak pasangan baru sadar beda prinsip setelah tinggal serumah. Padahal bisa dibicarakan lebih awal:\n\n1️⃣ Visi: mau dibawa ke mana rumah tangga kalian 5–10 tahun lagi?\n2️⃣ Keuangan: penghasilan, utang, dan siapa yang mengatur pengeluaran.\n3️⃣ Peran: siapa mengerjakan apa di rumah, termasuk kalau nanti punya anak.\n\nObrolan ini bukan untuk mencari salah, tapi supaya kalian saling mengenal dengan jujur. Bicarakan saat taaruf, dengan pendamping, tetap terjaga 🌱\n\nDari tiga ini, mana yang menurutmu paling sulit dibicarakan? Tulis di komentar 👇\nCek kesiapanmu gratis di siapnikah.id (link di bio)\n\n#siapnikah #persiapanmenikah #taaruf #komunikasipasangan #calonpengantin #pranikah #keuangankeluarga #nikahituibadah #muslimindonesia",
+ "video_url": "https://cdn.jsdelivr.net/gh/chondik-faradilla/siapnikah-media@main/reels/2026-11-25-a3.mp4",
+ "cover_url": "https://cdn.jsdelivr.net/gh/chondik-faradilla/siapnikah-media@main/reels/2026-11-25-a3.jpg",
+ "caption": "Taaruf bukan sekadar mencari yang \"cocok\" 🤍\nAda 4 hal penting yang sering lupa ditanyakan:\n\n1️⃣ Visi hidup — mau dibawa ke mana rumah tangga kalian?\n2️⃣ Keuangan — nafkah, utang, dan tanggungan keluarga. Bicara uang itu bukan tabu.\n3️⃣ Peran di rumah & hubungan dengan keluarga besar.\n4️⃣ Cara menghadapi masalah — saat marah, dia butuh diam dulu atau langsung bicara?\n\nTanyakan dengan sopan, lewat perantara yang amanah, dan jujurlah juga tentang dirimu. Karena kejujuran hari ini menjaga rumah tangga esok hari.\n\nMenurutmu, pertanyaan mana yang paling sering terlewat? Tulis di komentar ya 👇\n\nCek kesiapanmu gratis di siapnikah.id (link di bio)\n\n#taaruf #siapnikah #persiapanmenikah #nikahmuda #menikah #pranikah #jodoh #rumahtangga #muslimah #hijrah",
+ "threads": [
+  "Pertanyaan buat yang pernah atau sedang taaruf: hal apa yang menurutmu paling penting ditanyakan, tapi sering canggung untuk dibahas? Visi hidup, keuangan, peran di rumah, atau cara menyelesaikan konflik?"
+ ],
  "perlu_vo": true,
+ "vo_sementara": "edge-tts id-ID-ArdiNeural (Chrome/Gemini tidak bisa dipakai: 3 browser tersambung, belum dipilih)",
  "perlu_youtube": true,
- "catatan": "Dibuat tanpa VO: Chrome pengguna tidak bisa dipakai (3 browser tersambung, belum dipilih untuk sesi terjadwal). Run berikutnya: rakit ulang dengan VO via scripts/rakit-2026-11-25/build.py <key> reels/2026-11-25-<key>2.mp4 <vo.wav>, ganti video_url, jadwalkan YouTube."
+ "catatan": "Menggantikan versi tanpa VO (2026-11-25-a.mp4, komunikasi: 3 obrolan wajib sebelum akad (visi, keuangan, peran)) dari sesi paralel. VO sementara edge-tts (suara laki-laki id-ID-Ardi); B-roll Pixabay 3 klip, musik calm-reassuring, whoosh+ding, -15 LUFS; QA whisper lolos. Run berikutnya yang tersambung ke Chrome: ganti VO dengan Gemini Sulap Suara."
 }
