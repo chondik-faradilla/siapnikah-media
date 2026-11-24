@@ -1,0 +1,262 @@
+[
+ {
+  "id": "kesehatan",
+  "style": "A",
+  "pose": "hijab-05",
+  "hook": "Sebelum menikah, sudah cek kondisimu?",
+  "lines": [
+   "Sebelum menikah, sudah cek kondisimu sendiri?",
+   "Di siapnikah.id ada Pusat Tes gratis, tanpa perlu daftar.",
+   "Hitung BMI-mu dalam hitungan detik.",
+   "Cek tekanan darah, lengkap dengan artinya.",
+   "Ada juga cek suasana hati dan kecemasan.",
+   "Hasilnya tidak disimpan, jadi tetap privat.",
+   "Yuk, cek kondisimu gratis di siapnikah.id."
+  ],
+  "caps": [
+   null,
+   "Pusat Tes gratis, tanpa daftar",
+   "Kalkulator BMI",
+   "Cek tekanan darah",
+   "Cek suasana hati & kecemasan",
+   "Hasil tidak disimpan",
+   null
+  ],
+  "clips": [
+   null,
+   [
+    "panduan-3-cek-kesehatan.mp4",
+    16
+   ],
+   [
+    "panduan-3-cek-kesehatan.mp4",
+    38
+   ],
+   [
+    "panduan-3-cek-kesehatan.mp4",
+    70
+   ],
+   [
+    "panduan-3-cek-kesehatan.mp4",
+    84
+   ],
+   [
+    "panduan-3-cek-kesehatan.mp4",
+    96
+   ],
+   null
+  ]
+ },
+ {
+  "id": "biaya",
+  "style": "B",
+  "pose": "pria-05",
+  "hook": "Nikah butuh biaya berapa?",
+  "lines": [
+   "Kira-kira, nikah butuh biaya berapa?",
+   "Jawabannya tergantung pilihanmu sendiri.",
+   "Di siapnikah.id ada Kalkulator Biaya Nikah.",
+   "Pilih akad di KUA atau di luar, lalu isi jumlah tamu dan biaya per porsi.",
+   "Totalnya langsung terhitung, termasuk berapa yang perlu ditabung tiap bulan.",
+   "Hitung rencanamu gratis di siapnikah.id."
+  ],
+  "caps": [
+   null,
+   "Tergantung pilihanmu",
+   "Kalkulator Biaya Nikah",
+   "Akad, tamu & biaya per porsi",
+   "Total + tabungan per bulan",
+   null
+  ],
+  "clips": [
+   null,
+   [
+    "panduan-2-alat-gratis.mp4",
+    49
+   ],
+   [
+    "panduan-2-alat-gratis.mp4",
+    52
+   ],
+   [
+    "panduan-2-alat-gratis.mp4",
+    55
+   ],
+   [
+    "panduan-2-alat-gratis.mp4",
+    60
+   ],
+   null
+  ]
+ },
+ {
+  "id": "kua",
+  "style": "C",
+  "pose": "hijab-11",
+  "hook": "3 langkah urusan KUA tanpa panik",
+  "lines": [
+   "Tiga langkah biar urusan KUA nggak bikin panik.",
+   "Satu, isi tanggal akad rencanamu.",
+   "Dua, lihat batas waktu daftar ke KUA yang dihitung otomatis.",
+   "Tiga, centang persiapan satu per satu, dari lamaran sampai setelah akad.",
+   "Checklist ini gratis di siapnikah.id."
+  ],
+  "caps": [
+   null,
+   "Isi tanggal akad",
+   "Batas daftar KUA dihitung otomatis",
+   "Centang persiapan satu per satu",
+   null
+  ],
+  "steps": [
+   null,
+   "1",
+   "2",
+   "3",
+   null
+  ],
+  "clips": [
+   null,
+   [
+    "panduan-2-alat-gratis.mp4",
+    33
+   ],
+   [
+    "panduan-2-alat-gratis.mp4",
+    36
+   ],
+   [
+    "panduan-2-alat-gratis.mp4",
+    39
+   ],
+   null
+  ]
+ },
+ {
+  "id": "kenali",
+  "style": "A",
+  "pose": "hijab-02",
+  "hook": "Seberapa jujur kamu mengenal dirimu?",
+  "lines": [
+   "Menikah bukan soal usia atau saldo, tapi seberapa jujur kamu mengenal diri.",
+   "Coba Cermin Diri Pranikah di siapnikah.id.",
+   "Delapan bagian, sekitar tujuh menit.",
+   "Tidak ada jawaban benar atau salah.",
+   "Di akhir, kamu dapat profil kesiapan dan panduan yang personal.",
+   "Mulai sekarang, gratis, di siapnikah.id."
+  ],
+  "caps": [
+   null,
+   "Cermin Diri Pranikah",
+   "8 bagian, ±7 menit",
+   "Tidak ada jawaban salah",
+   "Profil kesiapan + panduan personal",
+   null
+  ],
+  "clips": [
+   null,
+   [
+    "panduan-2-alat-gratis.mp4",
+    129
+   ],
+   [
+    "panduan-3-cek-kesehatan.mp4",
+    113
+   ],
+   [
+    "panduan-3-cek-kesehatan.mp4",
+    120
+   ],
+   [
+    "panduan-4-menu-member.mp4",
+    183
+   ],
+   null
+  ]
+ },
+ {
+  "id": "cv",
+  "style": "B",
+  "pose": "wanita-12",
+  "hook": "Bingung menyusun CV taaruf?",
+  "lines": [
+   "Mau taaruf, tapi bingung menyusun CV?",
+   "Di siapnikah.id, isi formulirnya di sebelah kiri.",
+   "CV-mu langsung tersusun rapi di sebelah kanan.",
+   "Klik cetak atau simpan sebagai PDF, lalu kirimkan lewat perantara yang amanah.",
+   "Bonus: ada pertanyaan taaruf untuk membuka obrolan.",
+   "Buat CV taarufmu gratis di siapnikah.id."
+  ],
+  "caps": [
+   null,
+   "Isi formulir",
+   "CV tersusun otomatis",
+   "Cetak / simpan PDF",
+   "Bank pertanyaan taaruf",
+   null
+  ],
+  "clips": [
+   null,
+   [
+    "panduan-4-menu-member.mp4",
+    235
+   ],
+   [
+    "panduan-4-menu-member.mp4",
+    240
+   ],
+   [
+    "panduan-4-menu-member.mp4",
+    245
+   ],
+   [
+    "panduan-4-menu-member.mp4",
+    251
+   ],
+   null
+  ]
+ },
+ {
+  "id": "kenalan",
+  "style": "C",
+  "pose": "pria-04",
+  "hook": "3 langkah berkenalan dengan cara yang baik",
+  "lines": [
+   "Tiga langkah berkenalan dengan cara yang baik.",
+   "Satu, saring member berdasarkan kota dan usia.",
+   "Dua, buka profilnya dan baca dengan teliti.",
+   "Tiga, kirim minat dengan sopan. Kalau sama-sama minat, saatnya berkenalan.",
+   "Daftar gratis di siapnikah.id."
+  ],
+  "caps": [
+   null,
+   "Saring kota & usia",
+   "Baca profilnya",
+   "Kirim minat dengan sopan",
+   null
+  ],
+  "steps": [
+   null,
+   "1",
+   "2",
+   "3",
+   null
+  ],
+  "clips": [
+   null,
+   [
+    "panduan-1-memulai.mp4",
+    104
+   ],
+   [
+    "panduan-1-memulai.mp4",
+    112
+   ],
+   [
+    "panduan-4-menu-member.mp4",
+    119
+   ],
+   null
+  ]
+ }
+]
