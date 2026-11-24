@@ -33,5 +33,26 @@ Ditetapkan pemilik (Chondik), 24 Nov 2026. WAJIB dibaca dan dipatuhi setiap run 
 - `autopost.yml` jadwal 11:37 & 19:37 WIB sebagai lapis kedua; item yang tak bisa diposting dilewati ("skipped").
 - Bila laptop/Chrome tidak terhubung: tetap buat video (tanpa VO) agar slot terisi, laporkan, dan begitu laptop terhubung lagi rakit ulang dengan VO.
 
+## Rutinitas tambahan di tugas harian (setelah produksi selesai)
+
+### 1. Balas komentar (setiap run, maks ±20 menit)
+Lewat Chrome pengguna (sudah login), cek komentar BARU 24 jam terakhir di:
+- Instagram & Facebook: Meta Business Suite → Kotak Masuk → Komentar (https://business.facebook.com/latest/inbox/all).
+- YouTube: Studio → Komentar channel UCZcijfe6fh05j3Vqk3bXXvA (tab "Belum dibalas").
+- Threads: tab Aktivitas akun siapnikahindo.
+
+Aturan balasan:
+- Hangat, singkat (1–2 kalimat), bahasa santai-sopan, sapa dengan "Kak". Boleh ajak ke tes kesiapan: "cek di siapnikah.id ya Kak". Tanpa kata "AI/robot/coach".
+- Balas: pertanyaan umum, apresiasi, cerita ringan, mitos yang perlu diluruskan (singkat + rujuk dalil/riset yang sudah dipakai di video).
+- JANGAN balas / lewati dan laporkan: spam, provokasi agama/politik, ujaran kasar, curhat krisis (KDRT, bunuh diri, kekerasan) — untuk curhat krisis cukup balas empatik singkat + sarankan menghubungi tenaga profesional/orang tepercaya, tanpa nasihat medis/hukum.
+- Jangan pernah membalas DM, menghapus/menyembunyikan komentar, memblokir akun, atau menjanjikan apa pun soal harga/akun. Jangan menulis data pribadi siapa pun.
+- Catat jumlah komentar dibalas/dilewati per platform di laporan harian.
+
+### 2. Laporan performa mingguan (hanya run hari SENIN WIB)
+- Kumpulkan data 7 hari terakhir: IG & FB (Meta Business Suite → Insight → Konten: tayangan, jangkauan, suka, komentar, simpan, bagikan per reel), YouTube (Studio → Analytics → Konten: penayangan & durasi tonton per Shorts), Threads (Insight akun: tayangan & balasan per posting).
+- Tulis `laporan/<YYYY>-W<nn>.md`: tabel per konten, 3 konten terbaik & 3 terlemah + dugaan penyebab (hook, topik, durasi, jam), pertumbuhan pengikut tiap platform, dan 3 keputusan untuk minggu depan (topik/format yang diperbanyak/dikurangi).
+- Terapkan keputusan itu ke pemilihan topik run-run berikutnya (baca laporan terbaru sebelum memilih topik).
+- Commit + push, dan sertakan ringkasan 5 baris di laporan SendUserMessage hari itu.
+
 ## Contoh rakitan yang sudah lolos standar
 `scripts/contoh-rakit-vo/` (24 Nov 2026): `align.py` (cocokkan kalimat naskah ↔ waktu VO via whisper) dan `build.py` (retime scene ke VO, sisip B-roll berteks, musik, whoosh, ding, loudnorm).
