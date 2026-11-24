@@ -9,5 +9,10 @@
  "youtube": {
   "url": "https://youtube.com/shorts/AhFgji_Lpms",
   "jadwal": "2026-11-24T11:30:00+07:00"
- }
+ },
+ "result": {
+  "instagram": "ERROR: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Sunday, 22-Nov-26 18:00:00 PST. The current time is Monday, 23-Nov-26 20:35:49 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":463,\"fbtrace_id\":\"AnxnCiyi1yxxAxjDWxShqaQ\"}}",
+  "facebook": "ERROR: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Sunday, 22-Nov-26 18:00:00 PST. The current time is Monday, 23-Nov-26 20:35:50 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ABdUS1OXvke7TenGC_zEupl\"}}"
+ },
+ "posted_at": "2026-11-24T04:35:49.828535+00:00"
 }
