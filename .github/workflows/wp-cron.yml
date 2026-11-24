@@ -57,10 +57,25 @@ jobs:
               fi
             fi
           }
+          threads_if_due() {
+            due=$(python3 -c "
+          import glob,json,datetime
+          now=datetime.datetime.now(datetime.timezone.utc)
+          print(sum(1 for f in glob.glob('threads/queue/*.json') if datetime.datetime.fromisoformat(json.load(open(f))['publish_after'])<=now))")
+            if [ "$due" -gt 0 ]; then
+              busy=$(gh api "repos/$REPO/actions/workflows/threads.yml/runs?per_page=5" \
+                --jq '[.workflow_runs[]|select(.status!="completed")]|length')
+              if [ "$busy" = "0" ]; then
+                gh api -X POST "repos/$REPO/actions/workflows/threads.yml/dispatches" -f ref=main \
+                  && echo "$(date -u +%FT%TZ) threads dipicu ($due item jatuh tempo)"
+              fi
+            fi
+          }
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             for i in $(seq 1 22); do
               ping
               autopost_if_due
+              threads_if_due
               [ "$i" -lt 22 ] && sleep 900
             done
             # Sambung: 1 run sore (dipicu tugas harian 16:47 WIB) + 3 sambungan
