@@ -2,6 +2,7 @@ name: siapnikah autopost
 on:
   schedule:
     - cron: "37 4 * * *"   # 11:37 WIB (menit sepi; jadwal GitHub sering telat di :00/:30)
+    - cron: "37 9 * * *"   # 16:37 WIB (slot -c video promo fitur)
     - cron: "37 12 * * *"  # 19:37 WIB
   workflow_dispatch: {}
 concurrency:
