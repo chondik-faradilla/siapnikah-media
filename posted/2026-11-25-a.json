@@ -9,5 +9,10 @@
  "perlu_vo": true,
  "vo_sementara": "edge-tts id-ID-ArdiNeural (Chrome/Gemini tidak bisa dipakai: 3 browser tersambung, belum dipilih)",
  "perlu_youtube": true,
- "catatan": "Menggantikan versi tanpa VO (2026-11-25-a.mp4, komunikasi: 3 obrolan wajib sebelum akad (visi, keuangan, peran)) dari sesi paralel. VO sementara edge-tts (suara laki-laki id-ID-Ardi); B-roll Pixabay 3 klip, musik calm-reassuring, whoosh+ding, -15 LUFS; QA whisper lolos. Run berikutnya yang tersambung ke Chrome: ganti VO dengan Gemini Sulap Suara."
+ "catatan": "Menggantikan versi tanpa VO (2026-11-25-a.mp4, komunikasi: 3 obrolan wajib sebelum akad (visi, keuangan, peran)) dari sesi paralel. VO sementara edge-tts (suara laki-laki id-ID-Ardi); B-roll Pixabay 3 klip, musik calm-reassuring, whoosh+ding, -15 LUFS; QA whisper lolos. Run berikutnya yang tersambung ke Chrome: ganti VO dengan Gemini Sulap Suara.",
+ "result": {
+  "instagram": "ERROR: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Sunday, 22-Nov-26 18:00:00 PST. The current time is Tuesday, 24-Nov-26 20:38:17 PST.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":463,\"fbtrace_id\":\"APujDbNCtzHL7ALgDQJqsYF\"}}",
+  "facebook": "ERROR: 400 {\"error\":{\"message\":\"Error validating access token: Session has expired on Sunday, 22-Nov-26 18:00:00 PST. The current time is Tuesday, 24-Nov-26 20:38:17 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AXV21Dr6Ozze9KTm4ByuME7\"}}"
+ },
+ "posted_at": "2026-11-25T04:38:17.525735+00:00"
 }
