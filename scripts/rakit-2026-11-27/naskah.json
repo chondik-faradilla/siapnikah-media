@@ -1,0 +1,154 @@
+{
+ "a": {
+  "judul": "Bertengkar itu wajar, yang penting caranya",
+  "blocks": [
+   {
+    "t": "s",
+    "vo": "Dalam rumah tangga, beda pendapat itu pasti terjadi. Yang membedakan adalah cara menghadapinya.",
+    "label": "KONFLIK SEHAT",
+    "lc": "o",
+    "head": "Bertengkar itu *wajar.*",
+    "sub": "Yang membedakan: caranya.",
+    "pose": "hijab-02",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Banyak pertengkaran membesar bukan karena masalahnya, tapi karena kata-kata saat marah.",
+    "id": 203251,
+    "txt": "Yang melukai sering\nbukan masalahnya",
+    "dur": 3.6
+   },
+   {
+    "t": "s",
+    "vo": "Pertama, serang masalahnya, bukan orangnya.",
+    "label": "01 · FOKUS",
+    "lc": "g",
+    "head": "Serang *masalahnya,* bukan orangnya.",
+    "sub": "Hindari \"kamu selalu\" dan \"kamu nggak pernah\".",
+    "pose": "pria-04",
+    "dur": 4.5
+   },
+   {
+    "t": "s",
+    "vo": "Kedua, kalau emosi sedang tinggi, minta jeda, lalu sepakati kapan kembali bicara.",
+    "label": "02 · JEDA",
+    "lc": "g",
+    "head": "Boleh *jeda,* asal kembali.",
+    "sub": "Tenangkan diri dulu, lalu sepakati kapan lanjut bicara.",
+    "pose": "kacamata-11",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Rasulullah bersabda, orang yang kuat adalah yang mampu menguasai dirinya ketika marah.",
+    "id": 35590,
+    "txt": "Orang kuat: yang menguasai\ndirinya saat marah",
+    "dur": 3.6
+   },
+   {
+    "t": "s",
+    "vo": "Ketiga, dengarkan sampai selesai, sebelum membela diri.",
+    "label": "03 · DENGAR",
+    "lc": "g",
+    "head": "Dengar *sampai selesai.*",
+    "sub": "Pahami dulu, baru menjelaskan.",
+    "pose": "hijab-11",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Konflik yang sehat justru membuat kalian makin saling mengenal.",
+    "id": 2301,
+    "txt": "Konflik sehat bikin\nmakin saling kenal",
+    "dur": 3.6
+   },
+   {
+    "t": "c",
+    "vo": "Kenali gaya konflikmu sebelum menikah. Cek kesiapanmu, gratis, di siapnikah titik id.",
+    "label": "GRATIS",
+    "lc": "o",
+    "head": "Sudah kenal *gaya konflikmu?*",
+    "sub": "Cek kesiapanmu dulu, gratis.",
+    "pose": "hijab-12",
+    "dur": 4.5
+   }
+  ]
+ },
+ "b": {
+  "judul": "Setelah nikah, bahagia terus?",
+  "blocks": [
+   {
+    "t": "s",
+    "vo": "Banyak yang membayangkan, setelah menikah semuanya akan terasa indah setiap hari.",
+    "label": "EKSPEKTASI",
+    "lc": "o",
+    "head": "Setelah nikah, *bahagia terus?*",
+    "sub": "Bayangan yang sering kita bawa.",
+    "pose": "wanita-12",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Kenyataannya, ada hari yang melelahkan, ada tagihan, dan ada kebiasaan pasangan yang baru kelihatan.",
+    "id": 43869,
+    "txt": "Ada hari lelah\ndan kebiasaan baru",
+    "dur": 3.6
+   },
+   {
+    "t": "s",
+    "vo": "Bukan berarti menikah itu berat. Hanya saja, ia butuh kesiapan, bukan sekadar perasaan.",
+    "label": "REALITANYA",
+    "lc": "g",
+    "head": "Butuh *kesiapan,* bukan cuma perasaan.",
+    "sub": "Bahagia itu dibangun, bukan ditunggu.",
+    "pose": "pria-05",
+    "dur": 4.5
+   },
+   {
+    "t": "s",
+    "vo": "Coba tanyakan ke diri sendiri: saat kecewa, apa yang biasanya kamu lakukan?",
+    "label": "TANYA DIRI",
+    "lc": "g",
+    "head": "Saat kecewa, *kamu bagaimana?*",
+    "sub": "Menyalahkan, menghindar, atau mengajak bicara?",
+    "pose": "hijab-05",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Orang yang siap menikah tahu, cinta juga berarti memilih untuk bertahan dan memperbaiki.",
+    "id": 177254,
+    "txt": "Cinta juga berarti\nmemilih memperbaiki",
+    "dur": 3.6
+   },
+   {
+    "t": "s",
+    "vo": "Jadi, turunkan ekspektasi yang tidak realistis, dan naikkan kesiapan dirimu.",
+    "label": "INTINYA",
+    "lc": "m",
+    "head": "Turunkan *ekspektasi,* naikkan kesiapan.",
+    "sub": "Supaya kecewa tidak jadi alasan menyerah.",
+    "pose": "pria-11",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Karena rumah tangga yang tenang, dibangun oleh dua orang yang sama-sama mau belajar.",
+    "id": 356217,
+    "txt": "Dibangun berdua,\nsama-sama belajar",
+    "dur": 3.6
+   },
+   {
+    "t": "c",
+    "vo": "Seberapa siap kamu? Cek kesiapanmu, gratis, di siapnikah titik id.",
+    "label": "GRATIS",
+    "lc": "o",
+    "head": "Seberapa *siap* kamu?",
+    "sub": "Cek kesiapanmu dulu, gratis.",
+    "pose": "kacamata-06",
+    "dur": 4.5
+   }
+  ]
+ }
+}

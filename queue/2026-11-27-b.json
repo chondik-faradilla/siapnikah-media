@@ -1,0 +1,18 @@
+{
+  "publish_after": "2026-11-27T19:30:00+07:00",
+  "video_url": "https://cdn.jsdelivr.net/gh/chondik-faradilla/siapnikah-media@main/reels/2026-11-27-b.mp4",
+  "cover_url": "https://cdn.jsdelivr.net/gh/chondik-faradilla/siapnikah-media@main/reels/2026-11-27-b.jpg",
+  "caption": "Setelah nikah, bahagia terus? 🌱\n\nBanyak yang membayangkan pernikahan selalu indah setiap hari. Kenyataannya ada hari lelah, ada tagihan, ada kebiasaan pasangan yang baru kelihatan setelah serumah.\n\nBukan berarti menikah itu berat. Ia hanya butuh kesiapan, bukan sekadar perasaan. Bahagia itu dibangun berdua, bukan ditunggu.\n\nCoba jujur ke diri sendiri: saat kecewa, kamu biasanya menyalahkan, menghindar, atau mengajak bicara? Ceritakan di komentar 👇\n\nCek kesiapanmu gratis di siapnikah.id (link di bio)\n\n#siapnikah #ekspektasi #persiapannikah #kesiapanmenikah #realitapernikahan #menikah #rumahtangga #muhasabah #taaruf",
+  "perlu_vo": true,
+  "vo_sementara": "edge-tts id-ID-ArdiNeural (Chrome: 3 browser tersambung, belum dipilih, sehingga Gemini Sulap Suara tidak bisa dipakai pada run tak berawak)",
+  "perlu_youtube": true,
+  "youtube": {
+    "url": null,
+    "jadwal": "2026-11-27T19:30:00+07:00"
+  },
+  "qa": {
+    "whisper_14s": "lolos (kalimat naskah terdengar)",
+    "loudness": "-15 LUFS",
+    "broll": 3
+  }
+}
