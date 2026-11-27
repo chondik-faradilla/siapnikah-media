@@ -1,0 +1,144 @@
+{
+ "a": {
+  "judul": "Siapa yang cuci piring? Bahas peran sebelum akad",
+  "blocks": [
+   {
+    "t": "s",
+    "vo": "Setelah menikah, siapa yang masak, siapa yang cuci piring, dan siapa yang mengatur uang?",
+    "label": "PERAN KELUARGA",
+    "lc": "o",
+    "head": "Siapa yang *cuci piring?*",
+    "sub": "Pertanyaan kecil yang sering jadi besar.",
+    "pose": "hijab-03",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Hal kecil seperti ini sering jadi sumber gesekan, kalau tidak pernah dibicarakan.",
+    "id": 11610,
+    "txt": "Hal kecil yang\njarang dibicarakan",
+    "dur": 3.6
+   },
+   {
+    "t": "s",
+    "vo": "Pertama, bicarakan pembagian tugas rumah sejak sebelum akad.",
+    "label": "01 · TUGAS RUMAH",
+    "lc": "g",
+    "head": "Bagi *tugas rumah* sejak awal.",
+    "sub": "Bukan soal siapa menang, tapi saling meringankan.",
+    "pose": "pria-06",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Aisyah menceritakan, Rasulullah terbiasa membantu pekerjaan keluarganya di rumah.",
+    "id": 267,
+    "txt": "Rasulullah membantu\npekerjaan keluarganya",
+    "dur": 3.6
+   },
+   {
+    "t": "s",
+    "vo": "Kedua, sepakati siapa yang mengelola keuangan, dan bagaimana caranya.",
+    "label": "02 · KEUANGAN",
+    "lc": "g",
+    "head": "Sepakati *pengelola keuangan.*",
+    "sub": "Terbuka sejak hari pertama.",
+    "pose": "kacamata-02",
+    "dur": 4.5
+   },
+   {
+    "t": "s",
+    "vo": "Ketiga, samakan harapan soal pekerjaan, anak, dan keluarga besar.",
+    "label": "03 · HARAPAN",
+    "lc": "g",
+    "head": "Samakan *harapan* ke depan.",
+    "sub": "Pekerjaan, anak, dan keluarga besar.",
+    "pose": "wanita-05",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Peran yang jelas membuat rumah tangga terasa lebih ringan untuk berdua.",
+    "id": 14476,
+    "txt": "Peran jelas,\nrumah terasa ringan",
+    "dur": 3.6
+   },
+   {
+    "t": "c",
+    "vo": "Sudah siap membicarakan peran? Cek kesiapanmu, gratis, di siapnikah titik id.",
+    "label": "GRATIS",
+    "lc": "o",
+    "head": "Sudah bahas *peran kalian?*",
+    "sub": "Cek kesiapanmu dulu, gratis.",
+    "pose": "hijab-12",
+    "dur": 4.5
+   }
+  ]
+ },
+ "b": {
+  "judul": "Kedekatan suami istri itu ibadah, bukan tabu",
+  "blocks": [
+   {
+    "t": "s",
+    "vo": "Dalam Islam, kedekatan suami istri bukan hal yang tabu. Justru bernilai ibadah.",
+    "label": "BENEFIT MENIKAH",
+    "lc": "o",
+    "head": "Kedekatan suami istri itu *ibadah.*",
+    "sub": "Bukan hal tabu untuk dipahami.",
+    "pose": "hijab-04",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Rasulullah bersabda, dalam hubungan suami istri pun ada nilai sedekah.",
+    "id": 35575,
+    "txt": "Dalam kedekatan yang halal\nada nilai sedekah",
+    "dur": 3.6
+   },
+   {
+    "t": "s",
+    "vo": "Saat sahabat bertanya, beliau menjelaskan: yang haram berdosa, yang halal berpahala.",
+    "label": "HR MUSLIM",
+    "lc": "g",
+    "head": "Yang halal *berpahala.*",
+    "sub": "Begitu penjelasan Rasulullah kepada para sahabat.",
+    "pose": "kacamata-06",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Artinya, pernikahan mengubah hal yang manusiawi menjadi ladang pahala.",
+    "id": 124059,
+    "txt": "Yang manusiawi\njadi ladang pahala",
+    "dur": 3.6
+   },
+   {
+    "t": "s",
+    "vo": "Tapi kedekatan yang bernilai ibadah tumbuh dari rasa aman dan saling menghormati.",
+    "label": "KUNCINYA",
+    "lc": "g",
+    "head": "Tumbuh dari *rasa aman.*",
+    "sub": "Saling menghormati dan mau bicara.",
+    "pose": "hijab-06",
+    "dur": 4.5
+   },
+   {
+    "t": "b",
+    "vo": "Manfaat ini datang kalau kamu siap, lahir dan batin.",
+    "id": 156902,
+    "txt": "Manfaatnya datang\nkalau kamu siap",
+    "dur": 3.6
+   },
+   {
+    "t": "c",
+    "vo": "Seberapa siap kamu? Cek kesiapanmu, gratis, di siapnikah titik id.",
+    "label": "GRATIS",
+    "lc": "o",
+    "head": "Sudah *siap lahir batin?*",
+    "sub": "Cek kesiapanmu dulu, gratis.",
+    "pose": "pria-09",
+    "dur": 4.5
+   }
+  ]
+ }
+}
