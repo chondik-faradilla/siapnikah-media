@@ -1,0 +1,27 @@
+{
+ "a": {
+  "judul": "Punya utang? Ceritakan sebelum akad",
+  "blocks": [
+   {"t":"s","vo":"Punya cicilan atau utang? Calon pasanganmu berhak tahu sebelum akad.","label":"KEUANGAN","lc":"o","head":"Punya utang? *Ceritakan* sebelum akad.","sub":"Kejujuran kecil hari ini, ketenangan besar nanti.","pose":"pria-03","dur":4.5},
+   {"t":"b","vo":"Banyak konflik rumah tangga berawal dari urusan uang yang disembunyikan.","id":293084,"txt":"Uang yang disembunyikan\nsering jadi konflik","dur":3.6},
+   {"t":"s","vo":"Pertama, tulis semua kewajibanmu: utang, cicilan, dan tanggungan keluarga.","label":"01 · DATA JUJUR","lc":"g","head":"Tulis *semua kewajibanmu.*","sub":"Utang, cicilan, dan tanggungan keluarga.","pose":"kacamata-04","dur":4.5},
+   {"t":"b","vo":"Lalu buat rencana pelunasan yang realistis, lengkap dengan target waktunya.","id":34258,"txt":"Rencana pelunasan\nyang realistis","dur":3.6},
+   {"t":"s","vo":"Kedua, ceritakan dengan tenang, di waktu yang tepat, bukan setelah ketahuan.","label":"02 · CERITAKAN","lc":"g","head":"Ceritakan *sebelum ketahuan.*","sub":"Pilih waktu yang tenang, bicara apa adanya.","pose":"hijab-07","dur":4.5},
+   {"t":"b","vo":"Keterbukaan seperti ini justru membangun rasa percaya sejak awal.","id":180,"txt":"Terbuka sejak awal,\npercaya pun tumbuh","dur":3.6},
+   {"t":"s","vo":"Ketiga, sepakati bersama bagaimana utang itu diselesaikan setelah menikah.","label":"03 · SEPAKATI","lc":"g","head":"Selesaikan *bersama.*","sub":"Siapa membayar, berapa, sampai kapan.","pose":"wanita-08","dur":4.5},
+   {"t":"c","vo":"Siap terbuka soal keuangan? Cek kesiapanmu, gratis, di siapnikah titik id.","label":"GRATIS","lc":"o","head":"Sudah *siap terbuka?*","sub":"Cek kesiapan finansialmu, gratis.","pose":"pria-11","dur":4.5}
+  ]
+ },
+ "b": {
+  "judul": "Orang menikah cenderung hidup lebih lama, ini kata riset",
+  "blocks": [
+   {"t":"s","vo":"Tahukah kamu? Riset menemukan, orang yang menikah cenderung hidup lebih lama.","label":"BENEFIT MENIKAH","lc":"o","head":"Orang menikah cenderung *hidup lebih lama.*","sub":"Ini kata riset, bukan sekadar kata orang.","pose":"hijab-04","dur":4.5},
+   {"t":"b","vo":"Tinjauan banyak penelitian pada jutaan orang menunjukkan, risiko kematian orang yang menikah lebih rendah.","id":270588,"txt":"Riset pada jutaan orang:\nrisikonya lebih rendah","dur":3.6},
+   {"t":"s","vo":"Peneliti menduga, salah satunya karena pasangan saling menjaga: mengingatkan makan, istirahat, dan berobat.","label":"KENAPA?","lc":"g","head":"Karena ada yang *saling menjaga.*","sub":"Mengingatkan makan, istirahat, dan berobat.","pose":"kacamata-09","dur":4.5},
+   {"t":"b","vo":"Tapi ingat, ini kecenderungan, bukan jaminan.","id":253998,"txt":"Kecenderungan,\nbukan jaminan","dur":3.6},
+   {"t":"s","vo":"Analisis lebih dari seratus studi menemukan, pernikahan yang berkualitas berkaitan dengan kesehatan yang lebih baik.","label":"KUALITAS PENTING","lc":"g","head":"Yang menyehatkan itu *kualitasnya.*","sub":"Bukan sekadar status menikah.","pose":"pria-07","dur":4.5},
+   {"t":"b","vo":"Jadi, manfaat ini datang kalau kamu siap membangun rumah tangga yang sehat.","id":223459,"txt":"Manfaatnya datang\nkalau kamu siap","dur":3.6},
+   {"t":"c","vo":"Seberapa siap kamu? Cek kesiapanmu, gratis, di siapnikah titik id.","label":"GRATIS","lc":"o","head":"Sudah *siap membangun?*","sub":"Cek kesiapanmu dulu, gratis.","pose":"hijab-10","dur":4.5}
+  ]
+ }
+}
